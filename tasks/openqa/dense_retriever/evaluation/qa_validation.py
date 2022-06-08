@@ -118,7 +118,7 @@ def has_answer(answers, text, tokenizer, match_type) -> bool:
     elif match_type == 'regex':
         # Answer is a regex
         for single_answer in answers:
-            single_answer = _normalize(single_answer)
+            # single_answer = _normalize(single_answer)
             if regex_match(text, single_answer):
                 return True
     return False
